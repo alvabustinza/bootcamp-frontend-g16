@@ -138,13 +138,100 @@
                     <option value="jp">Japonesa</option>
                     <option value="it">Italiana</option>
                 </select>
-                <input type="submit" value="Guardar">
             </label>
 
             <input type="submit" value="Guardar">
 
         </form>
 
+        <form>
+            <h2>Checkboxes</h2>
+
+            <h3>Lenguajes de preferencia</h3>
+            <label>
+                <input type="checkbox" name="english" value=en checked>
+                Ingles
+            </label>
+            <label>
+                <input type="checkbox" name="spanish" value=es>
+                Español
+            </label>
+            <label>
+                <input type="checkbox" name="doutruhki" value=do disabled>
+                Dothraki
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
+
+        <form>
+            <h2>Radio button</h2>
+
+            <label>
+                <input type="radio" name="language1" value=en checked>
+                Ingles
+            </label>
+
+            <label>
+                <input type="radio" name="language1" value=en>
+                Chino
+            </label>
+
+            <label>
+                <input type="radio" name="language1" value=en>
+                Español
+            </label>
+
+            <label>
+                <input type="radio" name="language1" value=en>
+                Klingon
+            </label>
+
+            <label>
+                <input type="radio" name="language1" value=en>
+                Thailandes
+            </label>
+
+            <input type="submit" value="Guardar">
+
+        </form>
+
+        <form>
+            <h2>Validaciones</h2>
+
+            <label>
+                Nomnre
+                <input type="text" name="nombre" minlength="3" maxlength="15" required>
+            </label>
+
+            <label>
+                Email
+                <input type="email" name="email" required>
+            </label>
+
+            <label>
+                Edad
+                <input type="number" name="edad" required min="1" max="99">
+            </label>
+
+            <label>
+                Telefono
+                <input type="tel" name="Telefono" required placeholder="+51 951412016" pattern="\+[0-9]{2} [0-9]{9}">
+            </label>
+
+            <label>
+                comidas
+                <select required name=comidas>
+                    <option value=""> Selecciona tu comida</option>
+                    <option value=""> Francesa</option>
+                    <option value=""> Peruana</option>
+                    <option value=""> Japonesa</option>
+                    <option value=""> Italiana</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
     </main>
 </body>
 
