@@ -4,11 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios HTML</title>
+    <title>Formularios + Inputs + Validaciones</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+
 </head>
 
 <body>
+    <main>
+        <h1>Formularios + Inputs + Validaciones </h1>
+        <form>
+            <h2>Inputs</h2>
+            <label for="text1"> Input tipo texto</label>
+            <input type="text" placeholder="Ingresar algún texto" id="text1">
 
+            <label>
+                Input (Solo Lectura)
+                <input type="text" value="Solo lectura" readonly>
+            </label>
+            <label>
+                Input (Desactuvado)
+                <input type="text" value="Input desactivado" disabled>
+            </label>
+
+            <label>
+                Input tipo number
+                <input type="number" placeholder="Edad. Ejm 18" name="edad">
+            </label>
+
+            <label>
+                Input tipo enail
+                <input type="email" placeholder="Correo ejm alvaro@idei.com" name="email">
+            </label>
+
+            <label>
+                Input tipo range (edad)
+                <input type="range" min="1" max="120">
+            </label>
+
+            <label>
+                Input tipo tel
+                <input type="tel" placeholder="(51) 999999999">
+            </label>
+
+            <label>
+                Input tipo url
+                <input type="url" placeholder="Sitio web">
+            </label>
+
+            <label>
+                Input tipo password
+                <input type="password" placeholder="Password">
+            </label>
+
+            <label>
+                Input tipo Color
+                <input type="color">
+
+            </label>
+
+            <label>
+                Input tipo Search
+                <input type="search">
+            </label>
+
+            <label>
+                Input tipo file (seleccionar .jpg)
+                <input type="file" accept=".jpg, jpeg">
+            </label>
+
+            <label>
+                Input tipo file, multiples archivos
+                <input type="file" accept=".jpg, jpeg" multiple>
+            </label>
+
+
+            <input type="hidden" value="datos - ocultos">
+
+            <input type="submit" value="Guardar">
+            <input type="reset" value="Limpiar">
+
+        </form>
+
+        <form>
+            <h2>Input tipo fecha</h2>
+
+            <label>
+                Input tipo date time local (Fecha hora)
+                <input type="datetime-local" name="fecha">
+            </label>
+
+            <label>
+                Input tipo date (día)
+                <input type="date" name="día">
+            </label>
+
+            <label>
+                Input tipo week (semana)
+                <input type="week" name="semana">
+            </label>
+
+            <label>
+                Input tipo month (mes)
+                <input type="month" name="mes">
+            </label>
+
+            <input type="submit" value="Guardar">
+        </form>
+
+        <form>
+            <h2>Textarea</h2>
+
+            <label>
+                <textarea placeholder=" Escribe una descripció de tu persona" rows="5" cols="1"
+                    name="biografia"></textarea>
+
+                <textarea placeholder=" Escribe una descripció de tu persona" rows="6" disabled></textarea>
+
+                <input type="submit" value="Guardar">
+
+            </label>
+        </form>
+
+        <form>
+            <h2>Selects </h2>
+
+            <label>
+                Comida favorita
+                <select name="comidas">
+                    <option value=""> Selecciona tu comida favorita</option>
+                    <option value="fr">Francesa</option>
+                    <option value="th">Thailandesa</option>
+                    <option value="pe">Peruana</option>
+                    <option value="jp">Japonesa</option>
+                    <option value="it">Italiana</option>
+                </select>
+                <input type="submit" value="Guardar">
+            </label>
+
+            <input type="submit" value="Guardar">
+
+        </form>
+
+    </main>
 </body>
 
 </html>
