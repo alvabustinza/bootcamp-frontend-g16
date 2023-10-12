@@ -39,7 +39,7 @@ main {
   list-style: none;
 }
 .content li {
-  left: -20px;
+  left: -10px;
   position: relative;
 }
 
@@ -51,7 +51,7 @@ main {
   background-size: contain; /* Ajusta el tamaño del icono */
   background-repeat: no-repeat; /* Evita la repetición del icono */
   position: absolute; /* Posición absoluta en relación al elemento li */
-  left: -20px; /* Alinea a la izquierda */
+  left: -30px; /* Alinea a la izquierda */
 
   top: 0; /* Alinea en la parte superior */
 }
