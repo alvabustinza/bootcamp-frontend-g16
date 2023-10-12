@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/*
+font-family: 'Roboto', sans-serif;*/
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  color: hsl(234, 29%, 20%);
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+
+  height: 100vh; /* viewport heigth -> El alto de lo visible de la pantalla*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  width: 750px;
+  height: 500px; /*Valor mínimo, si se sobrepasa, sigue creciendo*/
+  display: flex;
+  border-radius: 20px;
+}
+
+.content {
+  width: 380px;
+  padding: 28px;
+  padding-left: 45px;
+  padding-right: 10px;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content ul {
+  list-style: none;
+}
+.content li {
+  left: -20px;
+  position: relative;
+}
+
+.content li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url(./assets/images/icon-list.svg);
+  background-size: contain; /* Ajusta el tamaño del icono */
+  background-repeat: no-repeat; /* Evita la repetición del icono */
+  position: absolute; /* Posición absoluta en relación al elemento li */
+  left: -20px; /* Alinea a la izquierda */
+
+  top: 0; /* Alinea en la parte superior */
+}
+
+.content input {
+  width: 310px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 8px;
+  margin-top: 8px;
+  justify-items: 20px;
+}
+
+.content input::placeholder {
+  text-indent: 10px; /* Establece el margen izquierdo deseado para el placeholder */
+}
+
+.content button {
+  width: 320px;
+  height: 40px;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.photo {
+  width: 350px;
+  padding-left: 0px;
+  padding-right: 30px;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
