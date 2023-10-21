@@ -1,0 +1,30 @@
+.header {
+  /*border: 1px solid red;*/
+  font-family: var(--font-primary);
+  margin: 0 auto; /*Arriba y a bajo 0, a los lados se centra simetricamente*/
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 3rem; /*1rem == 14px porque busca la fuente padre, en este caso la que está en html*/
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .header img {
+    width: 20%;
+  }
+}
+
+.header__nav {
+  /*  border: 1px solid yellow;*/
+  list-style: none;
+  padding: 10px;
+  margin: 10px;
+
+  display: flex;
+  gap: 3rem; /*Ayuda a poner un espaciado entre cada elemento*/
+}

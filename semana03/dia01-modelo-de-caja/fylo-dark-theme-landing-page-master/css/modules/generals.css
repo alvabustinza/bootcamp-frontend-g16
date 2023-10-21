@@ -1,0 +1,29 @@
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-color: var(--primary-dark-blue-intro);
+  color: var(--neutral-white);
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /*le quita el subrayado de la etiqueta a */
+}
+
+a:hover {
+  font-weight: var(--font-weight-bold);
+  text-decoration: underline;
+}
+
+img {
+  /*TODO RWD para imagenes*/
+  max-width: 100%; /*Para hacerlo responsive, de manera que las imagenes se adapten al ancho de la ventana*/
+  height: auto;
+}
+@media (max-width: 768px) {
+  img {
+    max-width: 80%;
+  }
+}

@@ -1,0 +1,7 @@
+/* RESETs */
+
+* {
+  box-sizing: border-box;
+  /* Permite incluir el padding margin y los bordes incluido en el ancho del wigth - Tambien, diferentes navegadores tiene diferentes medidas del padding, margin, con esta propiedad se evita problemas con navegadores*/
+  margin: 0;
+}

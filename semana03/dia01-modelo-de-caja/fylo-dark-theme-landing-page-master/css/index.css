@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+/*
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+*/
+
+@import url(../css/modules/variables.css);
+@import url(../css/modules/resets.css);
+@import url(../css/modules/generals.css);
+@import url(../css/modules/utils.css);
+@import url(../css/modules/header.css);
+@import url(../css/modules/hero.css);
+@import url(../css/modules/features.css);
+@import url(../css/modules/collaboration.css);
+@import url(../css/modules/testimonials.css);
+@import url(../css/modules/earlyaccess.css);
+@import url(../css/modules/footer.css);

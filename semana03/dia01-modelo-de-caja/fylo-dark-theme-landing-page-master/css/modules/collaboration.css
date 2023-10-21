@@ -1,0 +1,58 @@
+.collaboration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.3rem;
+
+  background-color: var(--primary-dark-blue-main);
+}
+
+@media (max-width: 768px) {
+  /* SE APLICA A DISPOSITIVOS COMO TABLES Y CELULARES */
+  .collaboration {
+    flex-direction: column;
+  }
+}
+
+.how_works {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1rem;
+  width: min(100% - 3rem, 30rem);
+}
+
+.how_works__title {
+  width: 24rem;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 2.5rem;
+}
+
+.how_works__text {
+  font-family: var(--font-secondary);
+}
+
+.how_works__button {
+  font-family: var(--font-secondary);
+  color: var(--accent-cyan);
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  border-bottom: 1px solid var(--accent-cyan);
+  width: 11.8rem;
+  padding-bottom: 0.5rem;
+}
+
+.how_works__button:hover {
+  font-weight: var(--font-weight-regular);
+  text-decoration: none;
+  color: var(--neutral-white);
+  border-bottom: 1px solid var(--neutral-white);
+}
+
+.how_works__button:hover svg circle {
+  fill: var(--neutral-white);
+}
